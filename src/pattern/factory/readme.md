@@ -1,4 +1,5 @@
-#The Factory Pattern
+# The Factory Pattern
+
 Many students have had questions about the factory pattern, so here is a bit of elaboration on "_the factory pattern_".
 The _factory pattern_ in itself is a misnomer, as there is no one true factory pattern. There are in fact several types of factory patterns, all grouped underneath the umbrella title of factory pattern. The most commonly found factory patterns are the following
 1. Simple Factory Pattern
