@@ -97,7 +97,7 @@ public class ShapeFactory3D implements ShapeFactory{
 The Abstract Factory pattern design allows us to have different versions of a Rectangle and Circle depending on which factory is used. 
 
 
-##_Additional Resources_
+## _Additional Resources_
 
 Here is a great explanation of the differences between the 3 most common types of factory patterns, complete with UML diagram examples: https://vivekcek.wordpress.com/2013/03/17/simple-factory-vs-factory-method-vs-abstract-factory-by-example/
 
