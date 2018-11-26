@@ -76,3 +76,10 @@ public class Client{
     }
 }
 ```
+The strategy pattern can also be used to make decisions based on the outcome of several strategies - you went over this in class with the Tic Tac Toe example. If one strategy fails, you can fall back to a second strategy. Another application of the strategy pattern is to try multiple strategies, and pick the most frequent outcome.
+
+### Additional Resources
+1. https://dzone.com/articles/design-patterns-strategy
+2. https://sourcemaking.com/design_patterns/strategy
+3. https://www.geeksforgeeks.org/strategy-pattern-set-1/
+4. https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
