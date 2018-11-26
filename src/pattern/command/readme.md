@@ -79,7 +79,7 @@ public class SellStock implements Command {
 }
 ```
  
- Now that we have defined some commands,Our broker is going to be our receiver, so we define the broker below.
+ Now that we have defined some commands, our stock broker is going to be our receiver, so we define the broker below.
 
 ```java
 public class StockBroker implements Receiver{
