@@ -106,6 +106,9 @@ public class Demo{
         
     }
 }
-
-
 ```
+
+### Additional Reading
+1. https://www.journaldev.com/1425/builder-design-pattern-in-java
+2. https://sourcemaking.com/design_patterns/builder
+3. https://www.geeksforgeeks.org/builder-design-pattern/
