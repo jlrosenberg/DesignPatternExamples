@@ -102,3 +102,6 @@ The Abstract Factory pattern design allows us to have different versions of a Re
 
 Here is a great explanation of the differences between the 3 most common types of factory patterns, complete with UML diagram examples: https://vivekcek.wordpress.com/2013/03/17/simple-factory-vs-factory-method-vs-abstract-factory-by-example/
 
+1. https://www.tutorialspoint.com/design_pattern/factory_pattern.htm
+2. https://www.journaldev.com/1392/factory-design-pattern-in-java
+
