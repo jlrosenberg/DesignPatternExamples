@@ -3,11 +3,11 @@ package pattern.adapter;
 import java.awt.*;
 
 /**
- * This is an example of an adapter that uses inheritance
+ * This is an example of an adapter that uses inheritance (class adapter)
  */
-public class RectangleAdapterExtended extends LegacyRectangleImpl implements ModernRectangle {
+public class ClassAdapter extends LegacyRectangleImpl implements ModernRectangle {
 
-    public RectangleAdapterExtended(LegacyRectangle r){
+    public ClassAdapter(LegacyRectangle r){
         super(r.getXCoordinate(), r.getYCoordinate());
     }
 

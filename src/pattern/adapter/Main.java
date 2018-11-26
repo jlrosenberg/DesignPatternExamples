@@ -12,8 +12,8 @@ public class Main {
         LegacyRectangle oldRect = new LegacyRectangleImpl(10, 20);
         ModernRectangle newRect = new ModernRectangleImpl(new Point(24, 42));
 
-        //Wrap our old rectangle in the RectangleAdapter so it behaves like a modern rectangle
-        ModernRectangle adaptedOldRect = new RectangleAdapter(oldRect);
+        //Wrap our old rectangle in the ObjectAdapter so it behaves like a modern rectangle
+        ModernRectangle adaptedOldRect = new ObjectAdapter(oldRect);
 
         System.out.println("Old rectangle acting like a modern one:");
         System.out.println(adaptedOldRect.getPosition().toString());
@@ -24,7 +24,7 @@ public class Main {
 
         // Next lets look at an example that uses the inheritance adapter
         System.out.println("Now, using adapter that has inheritance");
-        RectangleAdapterExtended adaptedOldRect2 = new RectangleAdapterExtended(oldRect);
+        ClassAdapter adaptedOldRect2 = new ClassAdapter(oldRect);
 
         System.out.println("Old rectangle acting like a modern one");
         System.out.println(adaptedOldRect2.getPosition().toString());

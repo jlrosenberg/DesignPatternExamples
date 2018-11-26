@@ -3,13 +3,13 @@ package pattern.adapter;
 import java.awt.*;
 
 /**
- * This is an example of an adapter that uses composition
+ * This is an example of an adapter that uses composition (object adapter)
  */
-public class RectangleAdapter implements ModernRectangle {
+public class ObjectAdapter implements ModernRectangle {
 
     private LegacyRectangle r;
 
-    public RectangleAdapter(LegacyRectangle r){
+    public ObjectAdapter(LegacyRectangle r){
         this.r = r;
     }
 
