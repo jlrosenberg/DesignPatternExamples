@@ -3,7 +3,7 @@ package pattern.command;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StockBroker {
+public class StockBroker implements Receiver {
 
     private List<Order> orders = new ArrayList<Order>();
 
@@ -17,7 +17,4 @@ public class StockBroker {
             o.execute();
         }
     }
-
-
-
 }
