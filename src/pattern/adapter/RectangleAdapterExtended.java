@@ -7,10 +7,6 @@ import java.awt.*;
  */
 public class RectangleAdapterExtended extends LegacyRectangleImpl implements ModernRectangle {
 
-    public RectangleAdapterExtended(int x, int y){
-        super(x, y);
-    }
-
     public RectangleAdapterExtended(LegacyRectangle r){
         super(r.getXCoordinate(), r.getYCoordinate());
     }

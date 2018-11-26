@@ -1,6 +1,6 @@
 # The Adapter Pattern
 
-The adapter pattern is a powerful and important tool when trying to make different pieces of code work together, as you all have seen/will see soon with assignment 8. It's very easy to relate this world to real world examples - in order to plug my macbook pro into this project, I need to use a usb-c to hdmi adapter. Without this adapter, the video outputted by my laptop is incompatible with the projecter. The adapter converts my video signal from one format to another so that the target (projector) can understand the source (laptop). 
+The adapter pattern is a powerful and important tool when trying to make different pieces of code work together, as you all have seen/will see soon with assignment 8. It's very easy to relate this pattern to real world examples - in order to plug my macbook pro into this projector, I need to use a usb-c to hdmi adapter. Without this adapter, the video outputted by my laptop is incompatible with the projecter. The adapter converts my video signal from one format to another so that the target (projector) can understand the source (laptop). 
 
 That being said, let's look at a code example. Using the recurring theme of shapes, say I have an interface, LegacyRectangle. 
 
@@ -66,10 +66,6 @@ This adapter does the job! It takes in our old LegacyRectangle and makes it act 
 Now, let's try using inheritance instead of composition, and see what that looks like,
 ```java
 public class RectangleAdapterExtended extends LegacyRectangleImpl implements ModernRectangle {
-
-    public RectangleAdapterExtended(int x, int y){
-        super(x, y);
-    }
 
     public RectangleAdapterExtended(LegacyRectangle r){
         super(r.getXCoordinate(), r.getYCoordinate());
