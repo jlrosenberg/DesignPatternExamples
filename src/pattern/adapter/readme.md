@@ -1,6 +1,6 @@
 # The Adapter Pattern
 
-The adapter pattern is a powerful and important tool when trying to make different pieces of code work together, as you all have seen/will see soon with assignment 8. It's very easy to relate this pattern to real world examples - in order to plug my macbook pro into this projector, I need to use a usb-c to hdmi adapter. Without this adapter, the video outputted by my laptop is incompatible with the projecter. The adapter converts my video signal from one format to another so that the target (projector) can understand the source (laptop). 
+The adapter pattern is a powerful and important tool when trying to make different pieces of code work together, as you all have seen/will see soon with assignment 8. It's very easy to relate this pattern to real world examples - in order to plug my macbook pro into this projector, I need to use a usb-c to hdmi adapter. Without this adapter, the video outputted by my laptop is incompatible with the projector. The adapter converts my video signal from one format to another so that the target (projector) can understand the source (laptop). 
 
 That being said, let's look at a code example. Using the recurring theme of shapes, say I have an interface, LegacyRectangle. 
 
@@ -44,11 +44,11 @@ It's your task to bridge the gap between these two interfaces, and we do this us
 First, let's look at an adapter example that uses composition to achieve its goal. This is called an object adapter. It takes an object of one type, and gives it the behaviors of a new type.
 
 ```java
-public class RectangleAdapter implements ModernRectangle {
+public class ObjectAdapter implements ModernRectangle {
 
     private LegacyRectangle r;
 
-    public RectangleAdapter(LegacyRectangle r){
+    public ObjectAdapter(LegacyRectangle r){
         this.r = r;
     }
 
@@ -65,9 +65,9 @@ This adapter does the job! It takes in our old LegacyRectangle and makes it act 
 
 Now, let's try using inheritance instead of composition, and see what that looks like. This practice is known as using a class adapter, since it transforms an entire class to have new behaviors while maintaining the functionality of the original class.
 ```java
-public class RectangleAdapterExtended extends LegacyRectangleImpl implements ModernRectangle {
+public class ClassAdapter extends LegacyRectangleImpl implements ModernRectangle {
 
-    public RectangleAdapterExtended(LegacyRectangle r){
+    public ClassAdapter(LegacyRectangle r){
         super(r.getXCoordinate(), r.getYCoordinate());
     }
 

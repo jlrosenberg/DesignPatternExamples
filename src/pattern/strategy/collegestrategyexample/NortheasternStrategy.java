@@ -1,4 +1,4 @@
-package pattern.strategy;
+package pattern.strategy.collegestrategyexample;
 
 public class NortheasternStrategy implements InteractionStrategy {
 
