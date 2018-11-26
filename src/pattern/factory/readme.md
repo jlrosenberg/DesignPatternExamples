@@ -19,11 +19,12 @@ Here's an example from my implementation of the animator, as an example.
 
 ```java
 public class EasyAnimator{
-    private static ShapeType typeFactory(String type){
+    private static Shape typeFactory(String type){
              if(type.equals("rectangle")){
-                 return ShapeType.RECTANGLE;
-             }else if(type.equals("ellipse")){
-                 return ShapeType.ELLIPSE;
+                 return new Rectangle();
+             }
+             if(type.equals("ellipse")){
+                 return new Ellipse();
              }
  
              throw new IllegalArgumentException("No shapetype with type \""+type+"\" exists");

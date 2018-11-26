@@ -40,8 +40,8 @@ public interface ModernRectangle {
 
 It's your task to bridge the gap between these two interfaces, and we do this using an adapter.
 
-### Using Composition
-First, let's look at an adapter example that uses composition.
+### The Object Adapter
+First, let's look at an adapter example that uses composition to achieve its goal. This is called an object adapter. It takes an object of one type, and gives it the behaviors of a new type.
 
 ```java
 public class RectangleAdapter implements ModernRectangle {
@@ -59,11 +59,11 @@ public class RectangleAdapter implements ModernRectangle {
 }
 ```
 
-This adapter does the job! It takes in our old LegacyRectangle and makes it act like it is a modern rectangle. You'll notice that the RectangleAdapter uses a **has-a relationship** with LegacyRectangle, which signifies that this is a case of composition. This does the job, but it also means we can't use the RectangleAdapter as an instance of LegacyRectangle - it doesn't have those methods publicly visible.
+This adapter does the job! It takes in our old LegacyRectangle and makes it act like it is a modern rectangle. You'll notice that the RectangleAdapter uses a **has-a relationship** with LegacyRectangle, which signifies that this is a case of composition - indicating that this is an object adapter. This does the job, but it also means we can't use the RectangleAdapter as an instance of LegacyRectangle - it doesn't have those methods publicly visible.
 
-### Using Inheritance
+### The Class Adapter
 
-Now, let's try using inheritance instead of composition, and see what that looks like,
+Now, let's try using inheritance instead of composition, and see what that looks like. This practice is known as using a class adapter, since it transforms an entire class to have new behaviors while maintaining the functionality of the original class.
 ```java
 public class RectangleAdapterExtended extends LegacyRectangleImpl implements ModernRectangle {
 
