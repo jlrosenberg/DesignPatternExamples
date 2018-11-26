@@ -43,10 +43,13 @@ Now, let's define a FileSaver, which is the class the user is going to interact 
 ```java
 public class FileSaver{
     
-    // Set a default save strategy of jpg (when you try and save a file on your computer, it usually has a default filetype that you can change if you want, right?
+    // Set a default save strategy of jpg (when you try and save a file on 
+    // your computer, it usually has a default filetype that you can 
+    // change if you want, right?
     private FileSaveStrategy saveMethod = new JpgSaveStrategy();
     
-    //Details about how this image is generated modified are not important right now
+    // Details about how this image is generated modified are not 
+    // important right now
     private BufferedImage myImage;
     
     
