@@ -18,8 +18,8 @@ You've likely used something like this somewhere in your Easy Animator project a
 Here's an example from my implementation of the animator, as an example.
 
 ```java
-public class EasyAnimator{
-    private static Shape typeFactory(String type){
+public class MyShapeFactory{
+    private static Shape shapeFactory(String type){
              if(type.equals("rectangle")){
                  return new Rectangle();
              }
@@ -27,7 +27,7 @@ public class EasyAnimator{
                  return new Ellipse();
              }
  
-             throw new IllegalArgumentException("No shapetype with type \""+type+"\" exists");
+             throw new IllegalArgumentException("No shape with type \""+type+"\" exists");
     }
 }
 ```
